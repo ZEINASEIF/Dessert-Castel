@@ -1,0 +1,687 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #27296d;
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+}
+header .container {
+  width: 80%;
+  margin: auto;
+}
+header .header-content {
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Forum", cursive;
+}
+.header-content img {
+  width: 120px;
+  height: 100%;
+}
+.header-content .nav .nav-items {
+  list-style: none;
+}
+.nav-items li {
+  display: inline-block;
+  position: relative;
+}
+.nav-items li .link-item {
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  font-weight: 800;
+  color: #27296d;
+  padding: 5px 20px;
+  font-family: "Forum", cursive;
+}
+.nav-items li::before {
+  position: absolute;
+  content: " ";
+  bottom: 0;
+  right: 0;
+  width: 0%;
+  height: 0%;
+  border-right: 2px solid #64d7d6;
+}
+.nav-items li:hover::before {
+  width: 0%;
+  height: 100%;
+  transition: 0.4s;
+}
+.nav-items li .link-item::before {
+  position: absolute;
+  content: " ";
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 0%;
+  border-bottom: 2px solid #64d7d6;
+}
+.nav-items li .link-item:hover::before {
+  width: 100%;
+  height: 0%;
+  transition: 0.8s;
+  transition-delay: 0.4s;
+}
+.nav-items li::after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 0%;
+  border-top: 2px solid #64d7d6;
+}
+.nav-items li:hover::after {
+  width: 100%;
+  height: 0%;
+  transition: 0.8s;
+  transition-delay: 0.4s;
+}
+.nav-items li .link-item::after {
+  position: absolute;
+  content: " ";
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 0%;
+  border-left: 2px solid #64d7d6;
+}
+.nav-items li .link-item:hover::after {
+  width: 0%;
+  height: 100%;
+  transition: 0.4s;
+}
+.header-content .login {
+  text-align: center;
+  width: 25%;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+.login .login-icon {
+  list-style: none;
+}
+.login-icon li {
+  display: inline-block;
+  margin-right: 25px;
+}
+.login-icon li i {
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 20%;
+  color: #64d7d6;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  position: relative;
+  background-color: #fdf4f5;
+}
+.login-icon li i:hover {
+  font-size: 25px;
+  padding: 10px;
+  color: #fea5c2;
+  box-shadow: inset 6px 6px 7px #dadada, inset -6px -6px 7px #ffffff;
+}
+.login-icon li span {
+  position: absolute;
+  top: 50px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.login span {
+  font-weight: 700;
+}
+.nav-items li table {
+  position: absolute;
+  width: 450px;
+  padding: 15px;
+  border: 2px solid #64d7d6;
+  background-color: #ffc6d3;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  transform: scale(0.5);
+}
+table thead tr th,
+table tbody tr td {
+  padding: 5px;
+  border: 2px solid #64d7d6;
+  border-radius: 5px;
+  background-color: #fdf4f5;
+}
+.drp:hover table {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+  transition: 0.5s;
+}
+.nav-items li table tr a {
+  text-decoration: none;
+}
+
+/*-----End Header-----  */
+
+/*  Start Main Section*/
+main .container {
+  background-color: #fde5ec;
+  width: 80%;
+  margin: auto;
+}
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-content .main-title {
+  width: 45%;
+}
+.main-content .main-img {
+  width: 40%;
+  height: 400px;
+  border-radius: 50%;
+  background-image: url(../images/cake-oiled-with-white-cream-garnished-with-strawberries.jpg);
+  background-size: cover;
+  background-position: center;
+  animation: biani 2.5s linear infinite alternate;
+}
+@keyframes biani {
+  0% {
+    border-radius: 68% 35% 57% 33%;
+  }
+}
+.main-title .h1-title {
+  font-size: 90px;
+  line-height: 108px;
+  text-transform: capitalize;
+  margin: 40px 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #0d0d25;
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+}
+.h1-title span {
+  color: #f49d1a;
+  background-image: linear-gradient(0deg, rgb(13 13 37 /8%), rgb(13 13 37 /8%));
+  background-size: 100% 15px;
+  background-position: 0 90%;
+  background-repeat: no-repeat;
+  display: inline;
+  transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
+}
+
+.main-title p {
+  line-height: 25px;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn {
+  margin: 30px 0 30px 0px;
+}
+.main-title .btn .menu-btn {
+  display: inline-block;
+  font-size: 20px;
+  font-family: "Forum", cursive;
+  padding: 20px 30px;
+  background: #fdf4f5;
+  border-radius: 30px;
+  color: #64d7d6;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  text-transform: capitalize;
+  text-align: center;
+  border: none;
+  text-decoration: none;
+}
+.main-title .btn .menu-btn:hover {
+  border-color: #0d0d25;
+  box-shadow: inset 9px 9px 12px #cccccc, inset -9px -9px 12px #ffffff;
+  color: #0d0d25;
+}
+/* -----------End Main Section----------- */
+.brands-sec .container {
+  width: 80%;
+  margin: auto;
+}
+.brand-title h4 {
+  padding-top: 25px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+  opacity: 0.7;
+}
+.brands-sec .container .brands-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.brands-row .brands-box {
+  width: 20%;
+}
+.brands-box img {
+  width: 100%;
+}
+.brands-box img:hover {
+  opacity: 0.8;
+}
+/* --------------End Brands Section---------- */
+.about {
+  width: 80%;
+  margin: auto;
+  padding: 80px 0;
+  background-color: #fef2f4;
+  text-align: center;
+  background-image: url(../images/blog-pattern-bg.png);
+}
+.about-header .sec-sub-title,
+.category-header .sec-sub-title,
+.menu-header .sec-sub-title {
+  display: inline-block;
+  background: #fdf4f5;
+  box-shadow: 9px 9px 12px #e4e4e4, -9px -9px 12px #ffffff;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  padding: 10px 20px;
+  border-radius: 60px;
+  color: #ff8243;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.about-header .sec-title,
+.category-header .sec-title,
+.menu-header .sec-title {
+  font-size: 46px;
+  line-height: 56px;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+.sec-title span {
+  display: block;
+}
+.about-content p {
+  font-size: 18px;
+  line-height: 30px;
+  margin: 30px 50px;
+}
+.sec-recipe .recipe {
+  background-image: url(../images/about.jpg);
+  width: 70%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  margin: auto;
+  border-radius: 40px;
+  box-shadow: 0 0 20px rgb(36 39 37 / 30%);
+}
+.sec-recipe .play-btn a {
+  width: 90px;
+  height: 90px;
+  background: #f3f3f5;
+  box-shadow: 9px 9px 12px #b2b2b3, -9px -9px 12px #ffffff;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  color: #64d7d6;
+  text-decoration: none;
+  padding-left: 4px;
+  padding-top: 4px;
+  font-size: 40px;
+}
+.sec-recipe .play-btn span {
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #bfbfbf;
+}
+.play-btn a:hover {
+  color: #fea5c2;
+  box-shadow: inset 9px 9px 12px #cccccc, inset -9px -9px 12px #ffffff;
+}
+/*----------- End About ------------*/
+.category {
+  padding-top: 80px;
+  text-align: center;
+}
+.category .container {
+  width: 80%;
+  margin: 40px auto;
+}
+.category .category-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.category-items .category-item {
+  width: 23%;
+  background-color: #fde5ec;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.category-items .category-item img {
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.category-items .category-item .category-content {
+  padding: 10px;
+  position: relative;
+}
+.category-content h3 {
+  color: #27296d;
+  font-size: 18px;
+  padding: 10px;
+}
+.category-content p {
+  color: #64d7d6;
+  padding: 10px;
+}
+.category-item i {
+  background-color: #64d7d6;
+  color: #27296d;
+  width: 30px;
+  height: 30px;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  visibility: hidden;
+  transition: 1;
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+}
+.category-item:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.category-item:hover i {
+  visibility: visible;
+}
+/*----------- End Category ------------*/
+.discount .container {
+  width: 80%;
+  margin: auto;
+  padding: 40px 0;
+}
+.discount .discount-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.discount-items .discount-item {
+  height: 300px;
+  position: relative;
+}
+.discount-items .item1 {
+  width: 50%;
+  background-color: #fde5ec;
+  padding: 20px 20px 60px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.item1 .top {
+  position: relative;
+  margin-bottom: 20px;
+}
+.item1 .top i {
+  position: absolute;
+  font-size: 25px;
+}
+.item1 .top h3 {
+  margin-left: 30px;
+}
+.item1 .top p {
+  padding-left: 40px;
+  font-size: 18px;
+  color: #64d7d6;
+  text-transform: capitalize;
+}
+.discount-items .item1 p {
+  font-size: 18px;
+  line-height: 28px;
+  font-family: "Forum", cursive;
+}
+.item1 .buttons {
+  position: absolute;
+  right: 40px;
+}
+.item1 .buttons .btn {
+  width: 50px;
+  height: 3px;
+  background-color: #f49d1a;
+  display: inline-block;
+}
+.discount-items .item2,
+.discount-items .item3 {
+  width: 22%;
+  height: 300px;
+  background-image: url(../images/delicious-sweet-cake-with-strawberries-baiser-plate.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.discount-items .item3 {
+  background-image: url(../images/front-view-macarons-cup-with-roses.jpg);
+}
+.discount-item .discount-info {
+  padding: 20px;
+}
+.discount-item .discount-info p {
+  color: #64d7d6;
+}
+.discount-items .item2:hover,
+.discount-items .item3:hover {
+  transform: scale(1.1, 1.1);
+}
+/* ----End Discount----- */
+
+.sprites .container {
+  width: 80%;
+  margin: 40px auto;
+  background-color: #fef2f4;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.sprites .sprites-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.sprites-items .sprite-item {
+  border-right: 3px dotted #0d0d25;
+  flex: 1;
+}
+.sprites-items .sprite-item:last-child {
+  border: none;
+}
+.sprite-item .sprite-icon {
+  background-image: url(../images/service-icon.png);
+  height: 55px;
+  background-repeat: no-repeat;
+  transition: all 0.5s;
+}
+.sprite-item .icon1 {
+  background-position: center 1px;
+}
+.sprite-item .icon2 {
+  background-position: center -183px;
+}
+.sprite-item .icon3 {
+  background-position: center -368px;
+}
+.sprite-item .icon4 {
+  background-position: center -552px;
+}
+.sprite-item .icon5 {
+  background-position: center -740px;
+}
+.sprite-item:hover .icon1 {
+  background-position: center -90px;
+}
+.sprite-item:hover .icon2 {
+  background-position: center -275px;
+}
+.sprite-item:hover .icon3 {
+  background-position: center -460px;
+}
+.sprite-item:hover .icon4 {
+  background-position: center -645px;
+}
+.sprite-item:hover .icon5 {
+  background-position: center -830px;
+}
+.sprite-info p {
+  line-height: 40px;
+  color: #b2b2b3;
+  font-family: "Forum", cursive;
+}
+/* ----End Sprites------ */
+.menu {
+  padding: 80px 0;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  background-color: #fef2f4;
+}
+
+.menu .container .list-menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.list-menu li {
+  font-size: 20px;
+  font-weight: 900;
+  margin: 40px 10px;
+  padding: 10px 20px;
+  background-color: #f9f9f9;
+  box-shadow: 9px 9px 12px #e4e4e4, -9px -9px 12px #f9f9f9;
+  border-radius: 20px;
+  font-family: "Forum", cursive;
+}
+.list-menu .active {
+  background-color: #ff8243;
+}
+.list-menu li:hover {
+  background-color: #ff8243;
+}
+.menu .menu-items {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.menu-items .menu-item {
+  width: 32%;
+  margin-bottom: 60px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  background-image: url(../images/blog-pattern-bg.png);
+  box-shadow: 0 0 10px #b2b2b3;
+}
+.menu .menu-item .menu-img {
+  position: relative;
+}
+.menu .menu-img img,
+.menu-overlay img {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.menu-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scalex(0);
+  opacity: 0.5;
+  transition: transform 0.2s;
+}
+.menu-item:hover .menu-overlay {
+  transform: scalex(1);
+}
+.menu-overlay ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+}
+.menu-overlay ul li {
+  width: 40px;
+  height: 40px;
+  background-color: #ff8243;
+  display: inline-block;
+  text-align: center;
+}
+.menu-overlay ul li i {
+  line-height: 40px;
+  color: #f9f9f9;
+}
+.menu-item .menu-info {
+  padding: 20px;
+}
+.menu-info i {
+  margin-top: 10px;
+}
+.menu-info .active {
+  color: #f49d1a;
+  font-size: 17px;
+}
+.menu-info span {
+  display: block;
+  margin-top: 10px;
+  font-family: "Forum", cursive;
+  font-style: 900;
+  font-size: 20px;
+}
+.menu-info h3 {
+  font-family: "Forum", cursive;
+  font-size: 22px;
+}
+/* End menu */
+.copyright-text {
+  width: 100%;
+  background-color: #fef2f4;
+  padding: 30px 0;
+  box-shadow: 0px 0px 12px 0px rgb(0 0 0 / 10%);
+}
+.copyright-text p {
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+.name {
+  color: #ff8243;
+  font-weight: bold;
+}
